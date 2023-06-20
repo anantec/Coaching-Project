@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: rgba(8, 8, 8, 0.438);
+            background-image: url("photos/tech2.jpg");
+            border-radius: 30px;
+            height: 80px;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .navb {
+            background: transparent;
+            backdrop-filter: blur(10px);
+            position: relative;
+            border-radius: 30px;
+            height: 80px;
+        }
+        
+        .navbar ul {
+            overflow: auto;
+        }
+        
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 5px 50px;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+        
+        .foot {
+            background-color: rgb(8, 8, 8);
+            border-radius: 30px;
+            height: 30px;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .foot li {
+            list-style: none;
+            float: left;
+            margin: 5px 50px;
+            margin-left: 80px;
+        }
+        
+        .foot li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            text-shadow: none;
+        }
+        
+        footer li a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background: #ff0303;
+            border-radius: 50px;
+            transform: scaleX(0);
+            transition: transform 0.2s linear;
+        }
+        
+        li a:hover::before {
+            transform: scaleX(1);
+        }
+        
+        li {
+            position: relative;
+        }
+        
+        li a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background: #fbfbfc;
+            border-radius: 50px;
+            transform: scaleX(0);
+            transition: transform 0.2s linear;
+        }
+        
+        li a:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .crs {
+            margin-top: 5px;
+        }
+        
+        .crs img {
+            border: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <nav class="navb ">
+
+            <ul>
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="regis.html">Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <div class="crs"><img src="photos/course.png" alt="" width="100%" height="500px"></div>
+    <footer class="foot">
+        <ul class="ft">
+            <li><a href="examrst.html"> Exam Result</a></li>
+            <li><a href="qes.html"> Add Question</a></li>
+            <li><a href="feed.html"> Feedback</a></li>
+            <li><a href="admin.html"> Admin Login</a></li>
+        </ul>
+    </footer><br>
+    <img src="photos/Placement - Copy.png" alt="" width="100%">
+
+</body>
+
+</html>

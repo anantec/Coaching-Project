@@ -1,0 +1,117 @@
+body {
+    background-repeat: no-repeat;
+    background-image: url("photos/tech.jpg");
+    background-size: 1100px 500px;
+}
+
+.scnd {
+    margin: 150px 0px 0px 150px;
+}
+
+button {
+    height: 40px;
+    width: 70px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+}
+
+.navbar {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    height: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.form input {
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 200px;
+    border: none;
+}
+
+.cnt {
+    height: 300px;
+    width: 400px;
+    margin: -200px 0px 0px 530px;
+}
+
+.ins {
+    background-color: rgba(0, 0, 0, 0.397);
+    padding: 10px 5px 10px 5px;
+    border: none;
+    border-radius: 20px;
+}
+
+h2 {
+    color: rgb(255, 0, 0);
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 5px 50px;
+    margin-left: 100px;
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.foot {
+    background-color: rgb(8, 8, 8);
+    border-radius: 30px;
+    height: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.foot li {
+    list-style: none;
+    float: left;
+    margin: 5px 50px;
+    margin-left: 80px;
+}
+
+.foot li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: none;
+}
+
+footer li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    background: #ff0303;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+li a:hover::before {
+    transform: scaleX(1);
+}
+
+button:hover {
+    background-color: rgb(6, 153, 153);
+}

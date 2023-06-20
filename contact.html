@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@300&family=Lobster&family=Rubik&display=swap" rel="stylesheet">
+    <title>Contact Form</title>
+    <style>
+        .navbar ul {
+            overflow: auto;
+        }
+        
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 5px 50px;
+            margin-left: 100px;
+        }
+        
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        
+        .navbar {
+            background: transparent;
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            height: 30px;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .foot {
+            background-color: rgb(8, 8, 8);
+            border-radius: 30px;
+            height: 30px;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .foot li {
+            list-style: none;
+            float: left;
+            margin: 5px 50px;
+            margin-left: 80px;
+        }
+        
+        .foot li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            text-shadow: none;
+            filter: blur(0px)
+        }
+        
+        body {
+            background-color: rgb(250, 3, 139);
+            font-family: 'Anton', sans-serif;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Lobster', cursive;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        li {
+            position: relative;
+        }
+        
+        li a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background: #fbfbfc;
+            border-radius: 50px;
+            transform: scaleX(0);
+            transition: transform 0.2s linear;
+        }
+        
+        li a:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .cnt {
+            height: 450px;
+            background-color: white;
+            padding-left: 20px;
+            border: none;
+            border-radius: 20px;
+            width: 350px;
+            padding-top: 10px;
+            margin-left: 580px;
+        }
+        
+        input {
+            background-color: rgb(197, 193, 193);
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+            width: 330px;
+            position: relative;
+            top: 1px;
+        }
+        
+        .qury {
+            height: 100px;
+        }
+        
+        button {
+            width: 335px;
+            position: relative;
+            top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(250, 3, 139);
+            height: 30px;
+        }
+        
+        .sub {
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            font-weight: bold;
+            text-shadow: none;
+            filter: blur(0);
+        }
+        
+        .cent {
+            text-align: center;
+            color: white;
+        }
+        
+        .image {
+            height: 460px;
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            width: 440px;
+            position: relative;
+            top: -460px;
+            left: 130px;
+        }
+        
+        .emg {
+            position: relative;
+            left: 25px;
+            border: none;
+            border-radius: 10px;
+            top: 25px;
+        }
+        
+        .man {
+            height: 600px;
+            margin-left: -30px;
+        }
+        
+        .add {
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+        
+        .mal {
+            position: relative;
+            top: -80px;
+            left: 160px;
+        }
+        
+        .numb {
+            position: relative;
+            top: -160px;
+            left: 300px;
+        }
+        
+        input::placeholder {
+            font-family: 'Rubik', sans-serif;
+            text-shadow: none;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="regis.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="man">
+
+        <div class="cent">
+
+            <h1>Contact us</h1>
+            <p>Any question or remark? Just write a message!</p>
+        </div>
+        <div class="cnt">
+            <form action="" class="frm">
+                <h2>Get in Touch</h2>
+                <p>
+                    Have an inquiry or some feedback for us? Fill out the form below to contact out team.
+                </p>
+                <Span class="nm">Name</Span>
+                <br>
+                <input type="text" placeholder="Enter your name">
+                <br> <br>
+                <span class="em">Email</span>
+                <br>
+                <input type="email" placeholder="Enter a valid email">
+                <br> <br>
+                <span class="querry">How can we help?</span>
+                <br>
+                <input type="text" class="qury">
+                <br>
+                <button class="sbmit"><span class="sub">
+                Submit
+            </span></button>
+            </form>
+        </div>
+        <div class="image">
+            <img src="photos/cntus.jpg" class="emg" height="260px">
+            <div class="add">
+                <h4>Address</h4>
+                <span class="adr"> Address of <br> organisation
+                </span>
+            </div>
+            <div class="mal">
+                <h4>Email</h4>
+                <span class="ml">abc@gmail.org</span>
+            </div>
+            <div class="numb">
+                <h4>Phone no.</h4>
+                <span class="no">
+                    +91 xxxxxxxxxx
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="fit">
+
+        <footer class="foot">
+            <ul class="ft">
+                <li><a href="examrst.html"> Exam Result</a></li>
+                <li><a href="qes.html"> Add Question</a></li>
+                <li><a href="feed.html"> Feedback</a></li>
+                <li><a href="admin.html"> Admin Login</a></li>
+            </ul>
+        </footer><br>
+        <img src="photos/Placement - Copy.png" alt="" width="100%">
+    </div>
+</body>
+
+</html>

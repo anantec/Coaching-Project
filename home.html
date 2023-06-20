@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <title>Home Page</title>
+    <style>
+        li {
+            position: relative;
+        }
+        
+        li a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background: #fbfbfc;
+            border-radius: 50px;
+            transform: scaleX(0);
+            transition: transform 0.2s linear;
+        }
+        
+        li a:hover::before {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li>
+                <a href="course.html">Courses</a>
+            </li>
+            <li><a href="regis.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="scnd">
+        <form action="" class="form">
+            <input type="text" placeholder="Enter your name">
+            <br>
+            <input type="password" placeholder="Enter your Password"><br>
+            <button class="login"><span style="color: white;  font-family: 'Rubik', sans-serif;">Login</span></button>
+
+        </form>
+    </div>
+    <div class="cnt">
+        <div class="ins">
+            <h2>Welcome to SSD Online Classes</h2>
+            <p>Free online test to practice for Competitive exams. Aptitude, Logical Reasoning, Computer Questions will help you to prepare for Online Exam, Entrance and Interview. Learn and Practice online test for Free and Prepare for your exam online
+                with many free tests and study materials with answers and explanation.
+
+        </div>
+        </p>
+    </div>
+    <br><br><br>
+    <div class="img">
+        <img src="photos/Placement.png" alt="" srcset="" width="100%
+        ">
+        <br>
+        <footer class="foot">
+            <ul class="ft">
+                <li><a href="examrst.html"> Exam Result</a></li>
+                <li><a href="qes.html"> Add Question</a></li>
+                <li><a href="feed.html"> Feedback</a></li>
+                <li><a href="admin.html"> Admin Login</a></li>
+            </ul>
+        </footer><br>
+        <img src="photos/Placement - Copy.png" alt="" width="100%">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Registration</title>
+    <style>
+        body {
+            background-image: url("photos/register.jpg");
+            background-repeat: no-repeat;
+            background-size: 1100px 900px;
+        }
+        
+        .navbar {
+            background-color: rgba(8, 8, 8, 0.438);
+            border-radius: 30px;
+            height: 30px;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .navbar ul {
+            overflow: auto;
+        }
+        
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 5px 50px;
+            margin-left: 100px;
+        }
+        
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: red;
+        }
+        
+        .foot {
+            background-color: rgb(8, 8, 8);
+            border-radius: 30px;
+            height: 30px;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        .foot li {
+            list-style: none;
+            float: left;
+            margin: 5px 50px;
+            margin-left: 80px;
+        }
+        
+        .foot li a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            text-shadow: none;
+        }
+        
+        footer li a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background: #ff0303;
+            border-radius: 50px;
+            transform: scaleX(0);
+            transition: transform 0.2s linear;
+        }
+        
+        li a:hover::before {
+            transform: scaleX(1);
+        }
+        
+        li {
+            position: relative;
+        }
+        
+        li a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            left: 0;
+            background: #fbfbfc;
+            border-radius: 50px;
+            transform: scaleX(0);
+            transition: transform 0.2s linear;
+        }
+        
+        li a:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .cnt {
+            background-color: rgba(0, 0, 0, 0.459);
+            height: 500px;
+            border: none;
+            border-radius: 30px;
+        }
+        
+        h2 {
+            text-align: center;
+            font-family: 'Rubik', sans-serif;
+            position: relative;
+            top: 10px;
+        }
+        
+        span {
+            font-family: 'Rubik', sans-serif;
+            color: white;
+        }
+        
+        input {
+            font-family: 'Rubik', sans-serif;
+            height: 30px;
+            width: 200px;
+            border: none;
+            border-radius: 30px;
+        }
+        
+        .cont {
+            margin-left: 10px;
+            padding-left: 110px;
+            border: none;
+            border-radius: 20%;
+        }
+        
+        .email {
+            margin: 0px 0px 0px -130px;
+            position: relative;
+            top: 30px;
+            padding-left: 20px;
+        }
+        
+        .enm {
+            margin: 0px 0px 0px -50px;
+            position: relative;
+            top: 30px;
+            padding-left: 20px;
+        }
+        
+        .slct {
+            height: 30px;
+            width: 200px;
+            border: none;
+            border-radius: 30px;
+            text-align: center;
+            position: relative;
+            top: 60px;
+            left: -90px;
+            width: 230px;
+        }
+        
+        .dbt {
+            position: relative;
+            top: 60px;
+            left: -136px;
+            width: 190px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        #gnm {
+            position: relative;
+            top: 85px;
+            height: 20px;
+            left: -140px;
+        }
+        
+        #fgn {
+            position: relative;
+            top: 85px;
+            height: 20px;
+            left: -320px;
+        }
+        
+        #add {
+            position: relative;
+            top: 90px;
+            width: 230px;
+            left: -342px;
+            height: 20px;
+            border: none;
+            border-radius: 30px;
+        }
+        
+        .city {
+            position: relative;
+            top: 115px;
+            left: -30px;
+            padding-left: 30px;
+        }
+        
+        .state {
+            position: relative;
+            top: 115px;
+            left: -25px;
+            width: 230px;
+            height: 30px;
+            border: none;
+            border-radius: 30px;
+            padding-left: 10px;
+            font-family: 'Rubik', sans-serif;
+            padding-right: 50px;
+        }
+        
+        .pass {
+            position: relative;
+            top: 150px;
+            left: -70px;
+            width: 220px;
+        }
+        
+        .cfpss {
+            position: relative;
+            top: 150px;
+            left: -155px;
+            width: 230px;
+        }
+        
+        .pnn {
+            position: relative;
+            top: 185px;
+            left: -25px;
+            width: 230px;
+        }
+        
+        .num {
+            position: relative;
+            top: 185px;
+            left: -108px;
+            width: 233px;
+        }
+        
+        hr {
+            position: relative;
+            top: 200px;
+            width: 950px;
+            left: -110px;
+        }
+        
+        button {
+            position: relative;
+            top: 200px;
+            background-color: rgb(211, 211, 8);
+            border: none;
+            height: 40px;
+            width: 80px;
+            border-radius: 30px;
+            left: 160px;
+        }
+        
+        button:hover {
+            background-color: rgb(20, 247, 247);
+        }
+        
+        .reset {
+            position: relative;
+            left: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="regis.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="cnt">
+        <div class="cont">
+
+            <form action="">
+                <h2>Registration Form</h2>
+                <span class="name" style="position: relative; left: 10px; ">User Name/E-Mail</span>
+                <input class="email" type="email" placeholder="abc@gmail.com">
+                <span class="stu" style="position: relative; left: 60px;">Student Name</span><input type="text" placeholder="Enter Your Name" class="enm">
+                <br>
+                <span class="qlf" style="position: relative;
+                top: 35px; left: 10px;">Qualification</span>
+                <select class="slct"><option value=""> Select from the following</option>
+                <option value="">BCA</option>
+                <option value="">BBA</option>
+                <option value="">MBA</option>
+                <option value="">MCA</option>
+                <option value="">Diploma</option>
+            </select>
+                <span class="dob" style="position: relative;
+                top: 35px; left: -40px;">Date of Birth</span>
+                <input type="date" name="" id="" class="dbt">
+                <br>
+                <span class="gndr" style="position: relative;
+                top: 60px; left: 10px; ">Gender</span>
+                <input type="radio" name="gender" id="gnm"><span class="mgnd" style="position: relative;
+                top: 80px; left: -230px;">Male</span>
+                <input type="radio" name="gender" id="fgn"><span class="fgnd" style="position: relative;
+                top: 80px; left: -410px;">Female</span>
+                <span class="sddr" style="position: relative;
+                top: 60px; left: -280px;">
+                Address
+            </span>
+                <textarea name="" id="add" cols="7" rows="1"></textarea>
+                <br>
+                <span class="cty" style="position: relative;
+                top: 85px; left: 10px;">City</span>
+                <input type="text" placeholder="Enter your city" class="city">
+
+                <span class="sts" style="position: relative;
+                top: 88px; left: 20px;">
+                State
+            </span>
+                <select class="state" name="state">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+            </select>
+                <br>
+                <span class="pss" style="position: relative; top: 120px; left: 10px;">Password</span>
+                <input type="password" name="" placeholderd="Password" class="pass">
+
+                <span class="cnfpss" style="position: relative;
+                top: 120px; left: -16px;">Confirm Password</span>
+                <input type="password" name="" placeholderd="confirm" class="cfpss">
+                <br>
+                <span class="pin" style="position: relative;
+                top: 155px; left: 10px;">Pin</span>
+                <input type="tel" maxlength="6" class="pnn">
+
+                <span class="nom" style="position: relative;
+                top: 155px; left: 22px;">Contact Number</span>
+                <input type="tel" name="" maxlength="10" class="num">
+                <hr>
+                <button class="sum"><span class="sumbit" style="color: black;">Submit</span></button>
+
+                <button class="reset"><span style="color: black;">Reset</span></button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <ul class="ft">
+            <li><a href="examrst.html"> Exam Result</a></li>
+            <li><a href="qes.html"> Add Question</a></li>
+            <li><a href="feed.html"> Feedback</a></li>
+            <li><a href="admin.html"> Admin Login</a></li>
+        </ul>
+    </footer><br>
+    <img src="photos/Placement - Copy.png" alt="" width="100%">
+
+</body>
+
+</html>
